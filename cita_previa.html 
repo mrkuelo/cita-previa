@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Cita con Marcos Echavarri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            color: #555;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitud de Cita Previa</h1>
+        <form>
+            <label for="name">Nombre completo:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="phone">Teléfono de contacto:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="reason">Motivo de la cita:</label>
+            <select id="reason" name="reason" required>
+                <option value="charla">Charla casual</option>
+                <option value="profesional">Plan profesional</option>
+                <option value="deporte">Actividad deportiva</option>
+                <option value="otro">Otro</option>
+            </select>
+            
+            <label for="date">Fecha preferida:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Hora preferida:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="location">Localización preferida:</label>
+            <select id="location" name="location" required>
+                <option value="pamplona">Pamplona</option>
+                <option value="novia">Ciudad de tu novia</option>
+                <option value="otro">Otro</option>
+            </select>
+            
+            <label for="details">Detalles adicionales:</label>
+            <textarea id="details" name="details" placeholder="Escribe aquí cualquier información extra..."></textarea>
+            
+            <div>
+                <input type="checkbox" id="commitment" name="commitment" required>
+                <label for="commitment">Acepto los términos de la cita y ser puntual.</label>
+            </div>
+            
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </div>
+</body>
+</html>
